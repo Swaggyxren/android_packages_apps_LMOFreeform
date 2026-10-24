@@ -20,6 +20,7 @@
         android:name=".app.SidebarApplication"
         android:persistent="true"
         android:label="@string/app_name"
+        android:icon="@drawable/view_sidebar_24px"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
@@ -27,7 +28,12 @@
             android:name=".ui.sidebar.SidebarSettingsActivity"
             android:exported="true"
             android:label="@string/sidebar_label"
+            android:icon="@drawable/view_sidebar_24px"
             android:theme="@style/Theme.SpaLib">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>

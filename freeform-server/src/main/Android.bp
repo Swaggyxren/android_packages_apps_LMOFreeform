@@ -28,5 +28,11 @@ java_library_static {
     srcs: [
         "java/com/libremobileos/**/*.java",
         "java/com/libremobileos/**/*.kt",
-    ]
+        ":lmofreeform_aidl",
+    ],
+    aidl: {
+        include_dirs: [
+            "frameworks/native/aidl/gui",
+        ],
+    },
 }
